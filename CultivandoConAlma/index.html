@@ -133,17 +133,57 @@
 			<br>
 			
 		</section>
-		<!-- Instrucciones -->
-		<section id="instrucciones">
-			<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html#" class="boton volver">&lt;</a>
-			<h1>Instrucciones</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, explicabo ducimus voluptates suscipit consequatur eligendi eos, hic aperiam sit! Recusandae explicabo provident sapiente beatae nam soluta ab minima omnis sed! <br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus aliquam odit, iusto earum ipsum. Repudiandae deleniti corporis, praesentium accusantium aspernatur temporibus quisquam minus, soluta provident molestiae. Tempore, aliquid, fugit. <br>
-
-			</p>
-			<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html#" class="boton">&lt;</a>&nbsp;&nbsp;<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html" class="boton">&gt;</a>
-		</section>
+		
+		
+		<!-- EditarPerfil -->
+		  <section id="editperfil" class="ocultar">
+			<div class="container">
+			  <div class="navigation">
+				<button class="btn-transparent btnPerfil">
+				  <span class="material-icons">
+					close
+				  </span>
+				</button>
+				<p>
+				  Editar datos
+				</p>
+				<button class="btn-transparent">
+				  <span class="material-icons"></span>
+				</button>
+			  </div>
+		
+			  <div class="content-center">
+				<div class="row">
+				  <img class="detalle" src="img/perfil.png" alt="">
+				</div>
+				<div>
+				  <form>
+					<label id="labels" for="user">Usuario</label>
+					<br>
+					<input type="text" id="user" name="user" placeholder="Usuario" required>
+					<br>
+					<label id="labels" for="name">Nombre</label>
+					<br>
+					<input type="text" id="name" name="name" placeholder="Nombre" required>
+					<br>
+					<label id="labels"for="email">Correo</label>
+					<br>
+					<input type="text" id="email" name="email" placeholder="Correo" required>
+					<br>
+					<label id="labels"for="passw">Contraseña</label>
+					<br>
+					<input type="password" id="passw" name="passw" placeholder="Contraseña" required>
+					<br>
+					<label id="labels" for="confirpassw">Confirmar contraseña</label>
+					<br>
+					<input type="password" id="confirpassw" name="confirpassw" placeholder="Confirmar contraseña" required>
+					<br><br>
+					<input id="btnGuardar" type="button" class="btn-primary" value="Guardar cambios">
+				  </form>
+				</div>
+			  </div>
+			</div>
+		  </section>
 
 	</body>
 </html>
