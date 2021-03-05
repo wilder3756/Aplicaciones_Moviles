@@ -24,3 +24,53 @@ nav li{
 section nav{
     margin-top: 320px;
 }
+
+#botonanalisis{
+    background-image:url(../img/analisis.svg);
+    height:40px;
+    width:40px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
+
+#botonnotificaciones{
+    background-image:url(../img/notificaciones.svg);
+    height:40px;
+    width:40px;
+    line-height: 50px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
+
+#botoninicio{
+    background-image:url(../img/inicio.svg);
+    height:40px;
+    width:40px;
+    
+    line-height: 50px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
+
+#botoncompras{
+    background-image:url(../img/carro_compras.svg);
+    height:40px;
+    width:40px;
+    line-height: 50px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
+#botonajustes{
+    background-image:url(../img/ajustes.svg);
+    height:40px;
+    width:40px;
+    
+    line-height: 50px;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
