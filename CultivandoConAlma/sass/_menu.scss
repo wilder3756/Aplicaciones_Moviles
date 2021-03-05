@@ -12,33 +12,46 @@ $color6_verde_claro:#4b6d45;
     
 }
 
+ul{
+    width: 90%;
+    border-left-width: 90%;
+}
+
 nav li{
     float:left;
-    width:10%;
-    padding:5px 10px;
+    width:13%;
+    padding:0px 10px;
     border:1px solid #000;
     text-align:center;
     color:#fff;
     list-style:none;
     display: inline-block;
+    margin: 0px auto;
 }
 section nav{
-    margin-top: 400px;
+    margin-top: 525px;
+}
+li{
+    background-color: white;
+    display: inline;
+    float: left;
+    
 }
 
 #botonanalisis{
     background-image:url(../img/analisis.svg);
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     background-color: transparent;
     display: inline-block;
     border: none;
+    
 }
 
 #botonnotificaciones{
     background-image:url(../img/notificaciones.svg);
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     line-height: 50px;
     background-color: transparent;
     display: inline-block;
@@ -47,8 +60,8 @@ section nav{
 
 #botoninicio{
     background-image:url(../img/inicio.svg);
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     
     line-height: 50px;
     background-color: transparent;
@@ -58,8 +71,8 @@ section nav{
 
 #botoncompras{
     background-image:url(../img/carro_compras.svg);
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     line-height: 50px;
     background-color: transparent;
     display: inline-block;
@@ -67,8 +80,8 @@ section nav{
 }
 #botonajustes{
     background-image:url(../img/ajustes.svg);
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     
     line-height: 50px;
     background-color: transparent;
