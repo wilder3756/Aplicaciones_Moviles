@@ -1,14 +1,25 @@
 const {src,dest}= require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
-const cleanCSS = require ('gulp-clean-css')
+const cleanCSS = require ('gulp-clean-css');
+const concat=require('gulp-concat');
+const uglify=require('gulp-uglify-es').default;
+sass.compiler = require('dart-sass'); //Este compilador permite use
 
+function js(){
+  return src(['./js/cosntantes.js','./js/operaciones.js']) // 
+      .pipe(concat("main.min.js"))
+      .pipe(uglify())
+      .pipe(dest('./js'));
+
+}
 function css() {
-  src("./sass/**/*.scss")
+  return src("./sass/**/*.scss")
       .pipe(sass())
       .pipe(cleanCSS())
       .pipe(rename('main.min.css'))
       .pipe(dest("./css"));
 }
+exports.js = js;
 exports.css = css;
 exports.default = ()=>{};
