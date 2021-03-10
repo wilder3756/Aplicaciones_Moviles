@@ -1,7 +1,14 @@
+$color1:#ba8b2c;
+$color2:#966c3a;
+$color5:#28482f;
+$color6:#4b6d45;
+$text: #fff;
+$border-radius: 20px;
+
 input[type=text], input[type=password], input[type=date], select {
     width: 80%;
     padding: 12px 20px;
-    margin-top: 8px 0;
+    margin: 10px 20px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -13,10 +20,24 @@ input[type=button] {
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: $border-radius;
     cursor: pointer;
 }
 
-input[type=button]:hover {
-    background-color: #1B4F59;
+.primary{
+    color: $text;
+    background-color: $color5;
+
+    &:hover{
+        background-color: $color6;
+    }
+}
+
+.second{
+    color: $text;
+    background-color: $color2;
+
+    &:hover{
+        background-color: $color1;
+    }
 }

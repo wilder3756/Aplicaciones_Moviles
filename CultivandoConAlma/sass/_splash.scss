@@ -4,15 +4,12 @@ $color3_rojo:#753621;
 $color4_rosado:#e5c9a0;
 $color5_verde_oscuro:#28482f;
 $color6_verde_claro:#4b6d45;
+
 #splash {
     background: $color6_verde_claro;
     background-repeat: repeat-y;
-    
-    left: 0;
-    top: 0;
-    animation: splash 3s ease-in;
 
-    img{
+    .logo{
         height:145px;
         width:145px;
     }

@@ -1,0 +1,23 @@
+$color2:#966c3a;
+
+#iniciarsesion{
+    /*background-color: ;*/
+    .logo-small{
+        height:100px;
+        width:100px;
+    }
+
+    a.boton{
+        color: $color2;
+        width: 100%;
+        text-decoration: none;
+    }
+    p {
+        margin: 10px;
+    }
+
+    .footer{
+        position: relative;
+        top: 160px;
+    }
+}
