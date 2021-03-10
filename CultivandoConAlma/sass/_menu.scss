@@ -1,3 +1,5 @@
+/* Ej: https://codepen.io/marcobiedermann/pen/aZZQww/ */
+
 $color1_amarillo:#ba8b2c;
 $color2_cafe:#966c3a;
 $color3_rojo:#753621;
@@ -5,84 +7,77 @@ $color4_rosado:#e5c9a0;
 $color5_verde_oscuro:#28482f;
 $color6_verde_claro:#4b6d45;
 
-#analisis{
-    width:30px;
-    height:40px;
+nav {
+    width: 100%;
+    background-color: #f0f6ff;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            padding: 15px;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 5px;
+        position: relative;
+        text-decoration: none;
+        border: 1px solid #747474;
+        border-radius: 50%;
+
+        &:focus::after, &:hover::after {
+            opacity: 1;
+        }
+
+        &::after {
+            border: 1px solid #000;
+            border-radius: 50%;
+            block-size: 100%;
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3);
+            content: '';
+            inline-size: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            transition: opacity 0.3s;
+        }
+    }
+
+    &.footer{
+        position: relative;
+        top: 470px;
+    }
 }
 
-ul{
-    width: 90%;
-    border-left-width: 90%;
+.inline ul {
+    display: flex;
+    justify-content: space-around;
 }
 
-nav li{
-    float:left;
-    width:13%;
-    padding:0px 10px;
-    border:1px solid #000;
-    text-align:center;
-    color:#fff;
-    list-style:none;
+.icon {
+    block-size: 1em;
     display: inline-block;
-    margin: 0px auto;
+    fill: currentcolor;
+    inline-size: 1em;
+    vertical-align: middle;
 }
-section nav{
-    margin-top: 525px;
-}
-li{
-    background-color: white;
-    display: inline;
-    float: left;
-    
+  
+.icon--2x {
+    font-size: 20px;
 }
 
-#botonanalisis{
-    background-image:url(../img/analisis.svg);
-    height:45px;
-    width:45px;
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-    
+.invisible {
+    left: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: -999px;
 }
-
-#botonnotificaciones{
-    background-image:url(../img/notificaciones.svg);
-    height:45px;
-    width:45px;
-    line-height: 50px;
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-}
-
-#botoninicio{
-    background-image:url(../img/inicio.svg);
-    height:45px;
-    width:45px;
-    
-    line-height: 50px;
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-}
-
-#botoncompras{
-    background-image:url(../img/carro_compras.svg);
-    height:45px;
-    width:45px;
-    line-height: 50px;
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-}
-#botonajustes{
-    background-image:url(../img/ajustes.svg);
-    height:45px;
-    width:45px;
-    
-    line-height: 50px;
-    background-color: transparent;
-    display: inline-block;
-    border: none;
-}
+  
