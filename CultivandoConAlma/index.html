@@ -37,11 +37,8 @@
 			<div class="container">
 			  <div class="navigation">
 					<!--Boton volver -->
-					<button class="botonregresar">
-					</button>
-					<p>
-						<b>Recuperar contraseña</b>
-					</p>
+					<button class="botonregresar"></button>
+					<p> <b>Recuperar contraseña</b> </p>
 				</div>
 				
 			  <div class="content">
@@ -54,45 +51,26 @@
 				  </form>
 			  </div>
 			</div>
-		  </section>
+		</section>
 		<!-- registro -->
-		<section id="registro">
-			<!--Boton volver -->
-			<button id="botonregresar"></button>
-			<br>
-			<h1>Registro</h1>
-			<img src="./Single App ejemplo_files/ivoted-2014-icon.png" alt="">
-			<br>
-			<br>
-			<div class="list">
-				<label class="item item-input item-stacked-label">
-				  <!--<span class="input-label">First Name</span>-->
-				  <input type="text" placeholder="Nombre">
-				</label>
-				<br><br>
-				<label class="item item-input item-stacked-label">
-				  <input type="text" placeholder="No recuerdo">
-				</label>
-				<br><br>
-				<label class="item item-input item-stacked-label">
-				  <input type="text" placeholder="No recuerdo">
-				</label><br><br>
-				<label class="item item-input item-stacked-label">
-					<input type="text" placeholder="Correo">
-				</label>
-				<br><br>
-				<label class="item item-input item-stacked-label">
-					<input type="text" placeholder="Contraseña">
-				</label>
-				<br><br>
-			 </div><br>
-			 
-			 <button class="button button-block button-positive">
-			  Registrarse
-			 </button>
-			<!--<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html#">Juego</a><br><br>
-			<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html#">Instrucciones</a><br><br>
-			<a href="https://xacarana.com/cursos/html_y_css/single_app_template.html#">Créditos</a><br> -->
+		<section id="registro" class="ocultar">
+			<div class="container">
+				<div class="navigation">
+						<button class="botonregresar"></button>
+						<p> <b>Registro</b> </p>
+				</div>
+
+				<div class="content">
+						<img class="logo-small" src="img/logo.svg" alt="">
+						<form>
+								<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+								<input type="text" id="user" name="user" placeholder="Usuario" required>
+								<input type="password" id="passw" name="passw" placeholder="Contraseña" required>
+								<input type="text" id="email" name="email" placeholder="Correo" required>
+								<input type="button" id="botonRegistrar" class="primary" value="Registrarse">
+						</form>
+				</div>
+			</div>
 		</section>
 		<!-- Inicio -->
 		<section id="inicio">

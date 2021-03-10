@@ -16,6 +16,7 @@ input[type=text], input[type=password], input[type=date], select {
     background-color: white;
 }
 input[type=button] {
+    text-transform: uppercase;
     width: 80%;
     padding: 14px 20px;
     margin: 8px 0;
