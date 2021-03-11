@@ -102,7 +102,7 @@
 							<li>
 								<a href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
+									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
@@ -157,7 +157,7 @@
 						<li>
 							<a href="">
 								<img class="icon icon--2x" src="img/carro_compras.svg">
-								<span class="invisible">Notifications</span>
+								<span class="invisible">Compras</span>
 							</a>
 						</li>
 						<li>
@@ -213,7 +213,7 @@
 						<li>
 							<a href="">
 								<img class="icon icon--2x" src="img/carro_compras.svg">
-								<span class="invisible">Notifications</span>
+								<span class="invisible">Compras</span>
 							</a>
 						</li>
 						<li>
@@ -228,7 +228,7 @@
 		</section>
 
 		<!--Notificaciones-->
-		<section id="notificacion" class="-ocultar">
+		<section id="notificacion" class="ocultar">
 			<div class="container">
 				<div class="navigation">
 						<button class="botonregresar"></button>
@@ -354,49 +354,63 @@
 			</div>
 		</section>
 		<!--Detalle notificaciones-->
-		<section id="detalle-noti" class="ocultar">
-			<div class="conteiner">
-				<div class="content">
-					<h1>Inicio</h1>
+		<section id="detalle-noti" class="-ocultar">
+			<div class="container">
+				<div class="navigation">
+						<button class="botonRegresarNoti"></button>
 				</div>
 
-				<nav class="inline footer">
-						<ul>
-							<li>
-								<a href="">
-									<img class="icon icon--2x" src="img/analisis.svg"/>
-									<span class="invisible">Analisis</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img class="icon icon--2x" src="img/notificaciones.svg">
-									<span class="invisible">Notificaciones</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img class="icon icon--2x" src="img/inicio.svg">
-									<span class="invisible">Inicio</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<img class="icon icon--2x" src="img/ajustes.svg">
-									<span class="invisible">Ajustes</span>
-								</a>
-							</li>
-						</ul>
-				</nav>
+				<div class="content">
+					<h2>Notificaciones x</h2>
+					<div class="card">
+						<div class="card_imgs" role="slider">
+							<input type="radio" id="s-1" name="slider-control" checked="checked">
+							<input type="radio" id="s-2" name="slider-control">
+							<input type="radio" id="s-3" name="slider-control">
+							<input type="radio" id="s-4" name="slider-control">
+							<input type="radio" id="s-5" name="slider-control">
+							<ul class="s-content">
+								<li class="s-item s-item-1" style="background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800');"></li>
+								<li class="s-item s-item-2" style="background-image: url('https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800');"></li>
+								<li class="s-item s-item-3" style="background-image: url('https://images.unsplash.com/photo-1428189923803-e9801d464d76?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800');"></li>
+								<li class="s-item s-item-4" style="background-image: url('https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800');"></li>
+								<li class="s-item s-item-5" style="background-image: url('https://images.unsplash.com/photo-1439736637365-748f240b24fb?crop=entropy&fit=crop&fm=jpg&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=800');"></li>
+							</ul>
+							<div class="s-control">
+								<label class="s-c-1" for="s-1"></label>
+								<label class="s-c-2" for="s-2"></label>
+								<label class="s-c-3" for="s-3"></label>
+								<label class="s-c-4" for="s-4"></label>
+								<label class="s-c-5" for="s-5"></label>
+							</div>
+							<div class="s-nav">
+								<label class="s-nav-1 right" for="s-2"></label>
+								<label class="s-nav-2 left" for="s-1"></label>
+								<label class="s-nav-2 right" for="s-3"></label>
+								<label class="s-nav-3 left" for="s-2"></label>
+								<label class="s-nav-3 right" for="s-4"></label>
+								<label class="s-nav-4 left" for="s-3"></label>
+								<label class="s-nav-4 right" for="s-5"></label>
+								<label class="s-nav-5 left" for="s-4"></label>
+							</div>
+						</div>
+
+						<div class="card_details">
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sapiente blanditiis harum quia itaque in aliquam sed voluptatem quae sit? Obcaecati quos, voluptates aut non suscipit enim iure odit. Dignissimos.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer">
+						<input type="button" id="botonAtras" class="second middle" value="Atras">
+						<input type="button" id="botonSiguiente" class="primary middle" value="Siguente">
+				</div>
 	
 			</div>
 		</section>
+
 		<!--Analisis-->
 		<section id="analisis" class="ocultar">
 			<div class="conteiner">
@@ -407,7 +421,7 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a href="" class="active">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
@@ -427,7 +441,7 @@
 							<li>
 								<a href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
+									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
@@ -451,7 +465,7 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a href="" class="active">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
@@ -471,7 +485,7 @@
 							<li>
 								<a href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
+									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
@@ -485,6 +499,7 @@
 	
 			</div>
 		</section>
+
 		<!--Productos-->
 		<section id="productos" class="ocultar">
 			<div class="conteiner">
@@ -513,9 +528,9 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="" class="active">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
+									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
@@ -557,9 +572,9 @@
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="" class="active">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
-									<span class="invisible">Notifications</span>
+									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
