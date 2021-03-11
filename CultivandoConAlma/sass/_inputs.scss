@@ -15,7 +15,7 @@ input[type=text], input[type=password], input[type=date], select {
     box-sizing: border-box;
     background-color: white;
 }
-input[type=button] {
+input[type=button], button.second, button.primary {
     text-transform: uppercase;
     width: 80%;
     padding: 14px 20px;
