@@ -5,20 +5,20 @@ $color4:#e5c9a0;
     .content{
         height: 80%;
     }
+}
 
-    .footer-btns{
-        width: 100%;
-        position: fixed;
-        bottom: 80px;
-        display: flex;
-        justify-content: space-around;
-        .primary, .second{
-            width: 30%;
-            margin: 0 20px;
-        }
-        button.second{
-            background-color: $color4;
-        }
+.footer-btns{
+    width: 100%;
+    position: fixed;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    .primary, .second{
+        width: 30%;
+        margin: 0 20px;
+    }
+    button.second{
+        background-color: $color4;
     }
 }
 
