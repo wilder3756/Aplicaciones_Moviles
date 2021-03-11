@@ -50,9 +50,17 @@ hr{
     height: 100%;
     width: 100%;
     text-align: center;
-    /*
+    
     .content{
-        height: 100%;
-    }*/
+        padding-bottom: 65px;
+    }
 }
 
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+  }

@@ -1,0 +1,57 @@
+
+$color5:#28482f;
+
+.fir-image-figure {
+    margin: 0;
+    width: 85%;
+    display: flex;
+    background-color: $color5;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10%;
+
+    a{
+        text-decoration: none;
+    }
+
+    & .caption, & figcaption {
+        padding: 15px;
+    }
+
+    & .fig-title, & .fig-subtitle, & .fig-details{
+        margin-top: 2px;
+        font-weight: 400;
+    }
+
+    & .fig-title {
+        color: #fff;
+        font-size: 17px;
+    }
+
+    & .fig-subtitle{
+        color: #ccc;
+        font-size: 15px;
+    }
+
+    & .fig-details{
+        color: #ccc;
+        font-size: 14px;
+    }
+}
+
+.fir-image {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+  
+.fir-imageover {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+  
