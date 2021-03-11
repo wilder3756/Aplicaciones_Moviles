@@ -7,7 +7,7 @@ const uglify=require('gulp-uglify-es').default;
 sass.compiler = require('dart-sass'); //Este compilador permite use
 
 function js(){
-  return src(['./js/cosntantes.js','./js/operaciones.js']) // 
+  return src(['./js/navegacion.js']) // 
       .pipe(concat("main.min.js"))
       .pipe(uglify())
       .pipe(dest('./js'));

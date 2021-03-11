@@ -6,17 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Cultivando con Alma</title>
 		<link href="css/main.min.css" rel="stylesheet" type="text/css">
+		<script src="js/main.min.js" language="javascript" type="text/javascript"></script>
 	</head>
 	<body>
 		<!-- Splash -->
-		<section id="splash" class="ocultar">
+		<section id="splash" >
 			<div class="container-fuild">
 				<div class="content">
 					<img class="logo" src="./img/logo.svg" alt="">
 				</div>
 			</div>
 		</section>
-		<!-- Login -->
+		<!-- Inisiar sesion -->
 		<section id="iniciarsesion"  class="ocultar">
 			<div class="container">
 			<div class="content">
@@ -37,7 +38,7 @@
 			<div class="container">
 			  <div class="navigation">
 					<!--Boton volver -->
-					<button class="botonregresar"></button>
+					<button class="botonregresar botonsLogin"></button>
 					<p> <b>Recuperar contraseña</b> </p>
 				</div>
 				
@@ -47,7 +48,7 @@
 					<br><br>
 					<input type="text" id="email" name="email" placeholder="Correo" required>
 					<br><br>
-					<input type="button" id="btnRecuperar" class="primary" value="Enviar">
+					<input type="button" id="botonRecuperar" class="primary" value="Enviar">
 				  </form>
 			  </div>
 			</div>
@@ -56,7 +57,7 @@
 		<section id="registro" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonregresar"></button>
+						<button class="botonregresar botonsLogin"></button>
 						<p> <b>Registro</b> </p>
 				</div>
 
@@ -67,7 +68,7 @@
 								<input type="text" id="user" name="user" placeholder="Usuario" required>
 								<input type="password" id="passw" name="passw" placeholder="Contraseña" required>
 								<input type="text" id="email" name="email" placeholder="Correo" required>
-								<input type="button" id="botonRegistrar" class="primary" value="Registrarse">
+								<input type="button" id="botonRegistrarse" class="primary" value="Registrarse">
 						</form>
 				</div>
 			</div>
@@ -82,31 +83,31 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a class="botonsAnalisis" href="">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsNoti" href="">
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="active">
+								<a class="botonsInicio active" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsCompras" href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
@@ -122,7 +123,7 @@
 		<section id="ajuste" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-					<button class="botonregresar"></button>
+					<button class="botonregresar botonsInicio"></button>
 				</div>
 
 				<div class="content">
@@ -137,31 +138,31 @@
 				<nav class="inline footer">
 					<ul>
 						<li>
-							<a href="">
+							<a class="botonsAnalisis" href="">
 								<img class="icon icon--2x" src="img/analisis.svg"/>
 								<span class="invisible">Analisis</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsNoti" href="">
 								<img class="icon icon--2x" src="img/notificaciones.svg">
 								<span class="invisible">Notificaciones</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsInicio" href="">
 								<img class="icon icon--2x" src="img/inicio.svg">
 								<span class="invisible">Inicio</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsCompras" href="">
 								<img class="icon icon--2x" src="img/carro_compras.svg">
 								<span class="invisible">Compras</span>
 							</a>
 						</li>
 						<li>
-							<a href="" class="active">
+							<a class="botonsAjuste active" href="" >
 								<img class="icon icon--2x" src="img/ajustes.svg">
 								<span class="invisible">Ajustes</span>
 							</a>
@@ -175,7 +176,7 @@
 		<section id="editperfil" class="ocultar">
 			<div class="container">
 			  <div class="navigation">
-						<button class="botonRegresarAjuste"></button>
+						<button class="botonregresar botonsAjuste"></button>
 						<p><b>Editar datos</b></p>
 			  </div>
 		
@@ -193,31 +194,31 @@
 				<nav class="inline footer">
 					<ul>
 						<li>
-							<a href="">
+							<a class="botonsAnalisis" href="">
 								<img class="icon icon--2x" src="img/analisis.svg"/>
 								<span class="invisible">Analisis</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsNoti" href="">
 								<img class="icon icon--2x" src="img/notificaciones.svg">
 								<span class="invisible">Notificaciones</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsInicio" href="">
 								<img class="icon icon--2x" src="img/inicio.svg">
 								<span class="invisible">Inicio</span>
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a class="botonsCompras" href="">
 								<img class="icon icon--2x" src="img/carro_compras.svg">
 								<span class="invisible">Compras</span>
 							</a>
 						</li>
 						<li>
-							<a href="" class="active">
+							<a class="botonsAjuste active" href="" >
 								<img class="icon icon--2x" src="img/ajustes.svg">
 								<span class="invisible">Ajustes</span>
 							</a>
@@ -231,14 +232,14 @@
 		<section id="notificacion" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonregresar"></button>
+						<button class="botonregresar botonsInicio"></button>
 				</div>
 
 				<div class="content">
 					<div class="cards-list">
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover" href="" id="botonDetalleNoti">
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -249,7 +250,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover">
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -260,7 +261,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover" >
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -271,7 +272,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover" >
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -282,7 +283,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover">
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -293,7 +294,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover" >
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -304,7 +305,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover" >
 									<img class="fir-author-image fir-image" src="https://fir-rollup.firebaseapp.com/de-sm.jpg">
 									<figcaption>
 										<div class="fig-title">Titulo</div>
@@ -319,31 +320,31 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a class="botonsAnalisis" href="">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="active">
+								<a class="botonsNoti active" href="" >
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsInicio" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="" >
+								<a class="botonsCompras" href="" >
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
@@ -357,7 +358,7 @@
 		<section id="detalle-noti" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonRegresarNoti"></button>
+						<button class="botonregresar botonsNoti"></button>
 				</div>
 
 				<div class="content">
@@ -404,8 +405,8 @@
 				</div>
 
 				<div class="footer">
-						<input type="button" id="botonAtras" class="second middle" value="Atras">
-						<input type="button" id="botonSiguiente" class="primary middle" value="Siguente">
+						<input type="button" id="botonAtrasNoti" class="second middle" value="Atras">
+						<input type="button" id="botonSiguienteNoti" class="primary middle" value="Siguente">
 				</div>
 	
 			</div>
@@ -415,7 +416,7 @@
 		<section id="analisis" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonregresar"></button>
+						<button class="botonregresar botonsInicio"></button>
 				</div>
 
 				<div class="content">
@@ -506,12 +507,14 @@
 					</div>
 
 					<div class="card stat">
-						<div class="header second">
-							<span class="title big">Estadisticas 2</span>
-							<span class="date small">01. Feb - 07. Feb</span>
-							<span class="type small">Revenue</span>
-							<span class="value">3621.79</span>
-						</div>
+						<a class="card_link" >
+							<div class="header">
+								<span class="title big">Estadisticas 2</span>
+								<span class="date small">01. Feb - 07. Feb</span>
+								<span class="type small">Revenue</span>
+								<span class="value">3621.79</span>
+							</div>
+						</a>
 						<div class="clearfix"></div>
 						<div class="parameter">
 							<span class="primary">Views</span>
@@ -593,31 +596,31 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="" class="active">
+								<a class="botonsAnalisis active" href="" >
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsNoti" href="">
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsInicio" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsCompras" href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
@@ -631,12 +634,12 @@
 		<section id="detalle-stat" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonRegresarAna"></button>
+						<button class="botonregresar botonsAnalisis"></button>
 				</div>
 
 				<div class="content">
 					<div class="card stat">
-						<a href="" class="card_link" id="botonDetalleStat">
+						<a class="card_link" id="botonDetalleStat">
 							<div class="header">
 								<span class="title big">Estadisticas</span>
 								<span class="date small">01. Feb - 07. Feb</span>
@@ -728,31 +731,31 @@
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="" class="active">
+								<a class="botonsAnalisis active" href="" >
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsNoti" href="">
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsInicio" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsCompras" href="">
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
@@ -767,7 +770,7 @@
 		<section id="productos" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonregresar"></button>
+						<button class="botonregresar botonsInicio"></button>
 				</div>
 
 				<div class="content">
@@ -801,39 +804,39 @@
 					</div>
 
 					<div class="footer-btns">
-						<input type="button" id="botonAtras" class="primary middle" value="Añadir">
-						<button class="second middle"> <img class="icon icon--2x" src="img/carro_compras.svg"></button>
+						<input type="button" id="botonAñadir" class="primary middle" value="Añadir">
+						<button id="botonCarro" class="second middle"> <img class="icon icon--2x" src="img/carro_compras.svg"></button>
 					</div>
 				</div>
 
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a class="botonsAnalisis" href="">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsNoti" href="">
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsInicio" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="active">
+								<a class="botonsCompras active" href="" >
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
@@ -844,10 +847,10 @@
 			</div>
 		</section>
 		<!--Pagos-->
-		<section id="pago" class="-ocultar">
+		<section id="pago" class="ocultar">
 			<div class="container">
 				<div class="navigation">
-						<button class="botonRegresarProd"></button>
+						<button class="botonregresar botonsCompras"></button>
 				</div>
 
 				<div class="content">
@@ -855,7 +858,7 @@
 					<div class="cards-list">
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover">
 									<img class="fir-author-image fir-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
 									<figcaption>
 										<div class="fig-title">Producto 1</div>
@@ -866,7 +869,7 @@
 							</figure>
 
 							<figure class="fir-image-figure">
-								<a class="fir-imageover" href="">
+								<a class="fir-imageover">
 									<img class="fir-author-image fir-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
 									<figcaption>
 										<div class="fig-title">Producto 2</div>
@@ -877,38 +880,38 @@
 							</figure>
 					</div>
 					<div class="footer-btns">
-						<input type="button" id="botonAtras" class="primary" value="Pagar">
+						<input type="button" id="botonPagar" class="primary" value="Pagar">
 					</div>
 				</div>
 
 				<nav class="inline footer">
 						<ul>
 							<li>
-								<a href="">
+								<a class="botonsAnalisis" href="">
 									<img class="icon icon--2x" src="img/analisis.svg"/>
 									<span class="invisible">Analisis</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsNoti" href="">
 									<img class="icon icon--2x" src="img/notificaciones.svg">
 									<span class="invisible">Notificaciones</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsInicio" href="">
 									<img class="icon icon--2x" src="img/inicio.svg">
 									<span class="invisible">Inicio</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="active">
+								<a class="botonsCompras active" href="" >
 									<img class="icon icon--2x" src="img/carro_compras.svg">
 									<span class="invisible">Compras</span>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a class="botonsAjuste" href="">
 									<img class="icon icon--2x" src="img/ajustes.svg">
 									<span class="invisible">Ajustes</span>
 								</a>
