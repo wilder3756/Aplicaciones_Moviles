@@ -7,6 +7,8 @@ $color: #000;
 
 body, html{
     margin:0;
+    
+
 }
 
 section{
@@ -24,11 +26,16 @@ h1{
     font-size: 40px;
     padding: 30px;
     margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h2{
     color: $color;
     font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 hr{
