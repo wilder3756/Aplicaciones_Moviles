@@ -1,6 +1,6 @@
 /* Parte de notificaciones (alerts) */
 let alerts = [], botonsDetalleAlert=[];
-let listAlerts, detalleAlert;
+let listAlerts, detalleAlert, numAlert;
 
 function initAlerts(){
     var alert1={id:1, img:"img/regar_notificacion.svg", titulo:"Regar área 1", desc:"Recuerde regar su cultivo en los horas de la tarde", fecha:"Mar. 12, 2021 &#8212; hace 5m", detalle:{imgs:["img/regar_imagen1.jfif","img/regar_imagen2.jfif","img/regar_imagen3.jfif"], desc:"Intenta no mojar demasiado las partes aéreas de las plantas ya que el exceso de humedad en las flores y tallos puede propiciar que aparezcan hongos y otras plagas."}};
@@ -15,6 +15,26 @@ function initAlerts(){
 
     listAlerts = document.getElementById("listAlerts");
     detalleAlert = document.getElementById("detalleAlert");
+}
+
+function irDetalleAlert(){
+    var id = parseInt(this.name)-1;
+    cargarDetalleAlert(id);
+    numAlert=id;
+    ocultarSecciones();
+    detallenoti.classList.remove("ocultar");
+}
+
+function irSiguienteAlert(){
+    if((numAlert+1) < alerts.length){
+        cargarDetalleAlert(++numAlert);
+    }
+}
+
+function irAnteriorAlert(){
+    if((numAlert-1) > -1){
+        cargarDetalleAlert(--numAlert);
+    }
 }
 
 function cargarAlerts(){
@@ -34,6 +54,8 @@ function cargarAlerts(){
         botonsDetalleAlert.push(document.getElementById("botonDetalleAlert_"+alerts[i].id));
         botonsDetalleAlert[i].addEventListener("click", irDetalleAlert);
     }
+    botonAtrasNoti.addEventListener("click",irAnteriorAlert);
+    botonSiguienteNoti.addEventListener("click",irSiguienteAlert);
 }
 
 function cargarDetalleAlert(id){
@@ -48,7 +70,7 @@ function cargarDetalleAlert(id){
         //Controls
         controls +=alerts[id].detalle.imgs.length != 1? '<label class="s-c-'+(Number(i)+Number(1))+'" for="s-'+(i+1)+'"></label>':'';
         //Flechas
-        if(alerts[id].detalle.imgs.length != 1 || (Number(i)+Number(1)) != alerts[id].detalle.imgs.length){
+        if( (Number(i)+Number(1)) < alerts[id].detalle.imgs.length){
             navs +='<label class="s-nav-'+(Number(i)+Number(1))+' right" for="s-'+(Number(i)+Number(2))+'"></label>';
             navs +='<label class="s-nav-'+(Number(i)+Number(2))+' left" for="s-'+(Number(i)+Number(1))+'"></label>';
         }

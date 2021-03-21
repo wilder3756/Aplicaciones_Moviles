@@ -61,8 +61,6 @@ function crearEventos(){
     botonEditar.addEventListener("click",irEditarPerfil);
     botonCerrar.addEventListener("click",irIniciarSesion);
     //botonGuardar.addEventListener("click",irAjuste);
-    /*botonAtrasNoti.addEventListener("click",irInicio);
-    botonSiguienteNoti.addEventListener("click",irInicio);*/
     botonDetalleStat.addEventListener("click",irDetalleStat);
     /*botonAñadir.addEventListener("click",irInicio);*/
     botonCarro.addEventListener("click",irPagos);
@@ -121,13 +119,6 @@ function irAjuste(event){
     if(event != null) event.preventDefault()
     ocultarSecciones();
     ajuste.classList.remove("ocultar");
-}
-
-function irDetalleAlert(){
-    var id = parseInt(this.name)-1;
-    cargarDetalleAlert(id);
-    ocultarSecciones();
-    detallenoti.classList.remove("ocultar");
 }
 
 function irDetalleStat(event){
