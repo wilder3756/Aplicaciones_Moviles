@@ -12,7 +12,8 @@ body, html{
 }
 
 section{
-    width:360px;
+    width: 100%;
+    min-width:360px;
     height:640px;
 }
 p{
@@ -71,4 +72,4 @@ hr{
     justify-content: space-evenly;
     flex-wrap: wrap;
     /*flex-direction: column;*/
-  }
+}

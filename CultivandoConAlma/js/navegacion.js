@@ -1,8 +1,8 @@
 let splash, iniciarsesion, recuperar, registro, inicio, ajuste, editperfil, notificacion, detallenoti, analisis, detallestat, productos, 
-    pago, secciones;
+    pago, acercade, secciones;
 
 let botonIngresar, botonRegistrar, botonContraseña, botonRecuperar, botonRegistrarse, botonEditar, botonCerrar, botonGuardar, 
-    botonAtrasNoti, botonSiguienteNoti, botonDetalleStat, botonAñadir, botonCarro, botonPagar;
+    botonAtrasNoti, botonSiguienteNoti, botonDetalleStat, botonAñadir, botonCarro, botonPagar, botonAcercade;
 
 let botonsLogin, botonsAnalisis, botonsNoti, botonsInicio, botonsCompras, botonsAjuste;
 
@@ -27,7 +27,8 @@ function crearReferencias(){
     detallestat = document.getElementById("detalle-stat");
     productos  = document.getElementById("productos");
     pago = document.getElementById("pago");
-    secciones = [splash, iniciarsesion, recuperar, registro, inicio, ajuste, editperfil, notificacion, detallenoti, analisis, detallestat, productos, pago];
+    acercade = document.getElementById("acercade");
+    secciones = [splash, iniciarsesion, recuperar, registro, inicio, ajuste, editperfil, notificacion, detallenoti, analisis, detallestat, productos, pago, acercade];
 
     botonIngresar = document.getElementById("botonIngresar");
     botonRegistrar = document.getElementById("botonRegistrar");
@@ -43,6 +44,7 @@ function crearReferencias(){
     botonAñadir = document.getElementById("botonAñadir");
     botonCarro = document.getElementById("botonCarro");
     botonPagar = document.getElementById("botonPagar");
+    botonAcercade = document.getElementById("botonAcercade");
     
     botonsLogin = document.querySelectorAll(".botonsLogin");
     botonsAnalisis = document.querySelectorAll(".botonsAnalisis");
@@ -64,17 +66,19 @@ function crearEventos(){
     botonDetalleStat.addEventListener("click",irDetalleStat);
     //botonCarro.addEventListener("click",irPagos);
     //botonPagar.addEventListener("click",irProducto);
+    botonAcercade.addEventListener("click",irAcercade);
 
     for(var i=0; i<=1; i++){
         botonsLogin[i].addEventListener("click",irIniciarSesion);
     }
-    for(var i=0; i<=8; i++){
+    for(var i=0; i<=9; i++){
         botonsAnalisis[i].addEventListener("click",irAnalisis);
         botonsNoti[i].addEventListener("click",irNoti);
         botonsCompras[i].addEventListener("click",irCompras);
         botonsAjuste[i].addEventListener("click",irAjuste);
     }
-    for(var i=0; i<=11; i++){
+    botonsAjuste[10].addEventListener("click",irAjuste);
+    for(var i=0; i<=12; i++){
         botonsInicio[i].addEventListener("click",irInicio);
     }
 }
@@ -148,4 +152,10 @@ function irCompras(event){
     event.preventDefault()
     ocultarSecciones();
     productos.classList.remove("ocultar");
+}
+
+function irAcercade(event){
+    event.preventDefault()
+    ocultarSecciones();
+    acercade.classList.remove("ocultar");
 }
