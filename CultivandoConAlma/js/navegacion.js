@@ -62,8 +62,7 @@ function crearEventos(){
     botonCerrar.addEventListener("click",irIniciarSesion);
     //botonGuardar.addEventListener("click",irAjuste);
     botonDetalleStat.addEventListener("click",irDetalleStat);
-    /*botonAñadir.addEventListener("click",irInicio);*/
-    botonCarro.addEventListener("click",irPagos);
+    //botonCarro.addEventListener("click",irPagos);
     botonPagar.addEventListener("click",irProducto);
 
     for(var i=0; i<=1; i++){
@@ -125,12 +124,6 @@ function irDetalleStat(event){
     event.preventDefault()
     ocultarSecciones();
     detallestat.classList.remove("ocultar");
-}
-
-function irPagos(event){
-    event.preventDefault()
-    ocultarSecciones();
-    pago.classList.remove("ocultar");
 }
 
 function irProducto(event){

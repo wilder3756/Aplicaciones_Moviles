@@ -1,5 +1,6 @@
 /* https://codepen.io/maheshambure21/pen/qZZrxy?editors=1100 */
 $color4:#e5c9a0;
+$slider-number: 4;
 
 #productos{
     .content{
@@ -65,27 +66,17 @@ $color4:#e5c9a0;
         animation: check 0.4s linear forwards;
 }
 
-.slider_nav:checked:nth-of-type(1) ~ .slider_inner {
-    left: 0%;
-}
-
-.slider_nav:checked:nth-of-type(2) ~ .slider_inner {
-    left: -100%;
-}
-
-.slider_nav:checked:nth-of-type(3) ~ .slider_inner {
-    left: -200%;
-}
-
-.slider_nav:checked:nth-of-type(4) ~ .slider_inner {
-    left: -300%;
+@for $i from 1 through $slider-number {
+    .slider_nav:checked:nth-of-type(#{$i}) ~ .slider_inner {
+        left: ($i - 1) * -100%;
+    }
 }
 
 .slider_inner {
     position: absolute;
     top: 0;
     left: 0;
-    width: 400%;
+    width: $slider-number * 100%;
     height: 100%;
     -webkit-transition: left 0.4s;
     transition: left 0.4s;
@@ -159,58 +150,3 @@ $color4:#e5c9a0;
         box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
     }
 }
-  
-/*
-<div class="slider_contents">
-								<div class="card">
-									<div class="card_img">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
-									</div>
-									<div class="card_details">
-										<h3>Producto 1</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa earum, provident voluptas sapiente saepe facere explicabo placeat commodi illo deleniti ab eos consequatur, quo non! Debitis soluta voluptatibus laborum esse?
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="slider_contents">
-								<div class="card">
-									<div class="card_img">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
-									</div>
-									<div class="card_details">
-										<h3>Producto 2</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa earum, provident voluptas sapiente saepe facere explicabo placeat commodi illo deleniti ab eos consequatur, quo non! Debitis soluta voluptatibus laborum esse?
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="slider_contents">
-								<div class="card">
-									<div class="card_img">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
-									</div>
-									<div class="card_details">
-										<h3>Producto 3</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa earum, provident voluptas sapiente saepe facere explicabo placeat commodi illo deleniti ab eos consequatur, quo non! Debitis soluta voluptatibus laborum esse?
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="slider_contents">
-								<div class="card">
-									<div class="card_img">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDnYdBa3h74YXTnYaGdF_U8XUMYgQ9rT3P76_JQZ9Sj4vQCOJ7CnH0P8b08B3e6apfrUJwSBm3Cns&usqp=CAc">
-									</div>
-									<div class="card_details">
-										<h3>Producto 4</h3>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa earum, provident voluptas sapiente saepe facere explicabo placeat commodi illo deleniti ab eos consequatur, quo non! Debitis soluta voluptatibus laborum esse?
-										</p>
-									</div>
-								</div>
-							</div>
-*/

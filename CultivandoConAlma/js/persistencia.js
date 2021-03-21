@@ -12,6 +12,7 @@ function initPersistencia(){
     initEditar();
     //Inicializar variables de notificaciones y productos
     initAlerts();
+    initProducts();
 }
 
 /* Parte para registrar */
