@@ -61,7 +61,7 @@ function crearEventos(){
     //botonRegistrarse.addEventListener("click",irInicio);
     botonEditar.addEventListener("click",irEditarPerfil);
     botonCerrar.addEventListener("click",irIniciarSesion);
-    botonGuardar.addEventListener("click",irAjuste);
+    //botonGuardar.addEventListener("click",irAjuste);
     botonDetalleNoti.addEventListener("click",irDetalleNoti);
     /*botonAtrasNoti.addEventListener("click",irInicio);
     botonSiguienteNoti.addEventListener("click",irInicio);*/
@@ -120,7 +120,7 @@ function irEditarPerfil(event){
 }
 
 function irAjuste(event){
-    event.preventDefault()
+    if(event != null) event.preventDefault()
     ocultarSecciones();
     ajuste.classList.remove("ocultar");
 }

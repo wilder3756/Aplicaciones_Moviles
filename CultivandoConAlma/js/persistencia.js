@@ -1,5 +1,6 @@
 var userL_txt, passwL_txt,
-    nameR_txt, emailR_txt, userR_txt, passwR_txt;
+    nameR_txt, emailR_txt, userR_txt, passwR_txt,
+    nameE_txt, emailE_txt, userE_txt, passwE_txt, confirpasswE_txt;
 var usuarios = [], current={};
 
 function initPersistencia(){
@@ -8,7 +9,9 @@ function initPersistencia(){
     //Inicializar variables creando referencias con los text box y botones
     initRegistro();
     initLogin();
+    initEditar();
 }
+
 /* Parte para registrar */
 function initRegistro(){
     nameR_txt = document.getElementById("nombreR");
@@ -58,6 +61,14 @@ function adecuarCampos(usuario){
     //Dejar el de usuario login como forma de "recordar el usuario"
     userL_txt.value=usuario.user;
     passwL_txt.value="";
+    
+    //Acomodar campos para edit
+    nameE_txt.value=usuario.name;
+    emailE_txt.value=usuario.email;
+    userE_txt.value=usuario.user;
+    passwE_txt.value=usuario.passw;
+    
+    //cargarAlerts();
 }
 
 /* Parte para login */
@@ -86,3 +97,41 @@ function iniciarSesion(){
     alert("Usuario y/o contraseña incorrectos");
 }
 
+/* Editar datos */
+function initEditar(){
+    nameE_txt = document.getElementById("nombreE");
+    emailE_txt = document.getElementById("emailE");
+    userE_txt = document.getElementById("userE");
+    passwE_txt = document.getElementById("passwE");
+    confirpasswE_txt = document.getElementById("passwconfE");
+
+    botonGuardar.addEventListener("click",editarDatos);
+}
+
+function editarDatos(){
+    //Validar que se digiten datos
+    if(nameE_txt.value=="" || emailE_txt.value=="" || userE_txt.value=="" || passwE_txt.value=="" || confirpasswE_txt.value==""){
+        alert("Debe llenar todos los campos");
+        return false;
+    }
+    //Validar contraseñas
+    if(passwE_txt.value != confirpasswE_txt.value){
+        alert("Las contraseñas no coinciden");
+        return false;
+    }
+    //Actualizar datos del usuario
+    current.name = nameE_txt.value;
+    current.email = emailE_txt.value;
+    current.user = userE_txt.value;
+    current.passw = passwE_txt.value;
+    //Guardarlo - actualizar el usuario
+    for(var i in usuarios){
+        if(usuarios[i].user == current.user){
+            usuarios[i] = current;
+            adecuarCampos(current);
+            localStorage.setItem("usuarios",JSON.stringify(usuarios));
+            irAjuste();
+            return true;
+        }
+    }
+}
