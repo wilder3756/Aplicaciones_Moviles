@@ -63,7 +63,7 @@ function crearEventos(){
     //botonGuardar.addEventListener("click",irAjuste);
     botonDetalleStat.addEventListener("click",irDetalleStat);
     //botonCarro.addEventListener("click",irPagos);
-    botonPagar.addEventListener("click",irProducto);
+    //botonPagar.addEventListener("click",irProducto);
 
     for(var i=0; i<=1; i++){
         botonsLogin[i].addEventListener("click",irIniciarSesion);
