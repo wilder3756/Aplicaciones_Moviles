@@ -10,6 +10,7 @@ window.onload = ()=>{
     crearReferencias();
     setTimeout(irIniciarSesion,1500);
     crearEventos();
+    initPersistencia();
 }
 
 function crearReferencias(){
@@ -53,11 +54,11 @@ function crearReferencias(){
 }
 
 function crearEventos(){
-    botonIngresar.addEventListener("click",irInicio);
+    //botonIngresar.addEventListener("click",irInicio);
     botonRegistrar.addEventListener("click",irRegistro);
     botonContraseña.addEventListener("click",irRecuperar);
     botonRecuperar.addEventListener("click",irIniciarSesion);
-    botonRegistrarse.addEventListener("click",irInicio);
+    //botonRegistrarse.addEventListener("click",irInicio);
     botonEditar.addEventListener("click",irEditarPerfil);
     botonCerrar.addEventListener("click",irIniciarSesion);
     botonGuardar.addEventListener("click",irAjuste);
@@ -95,7 +96,7 @@ function irIniciarSesion(){
 }
 
 function irInicio(event){
-    event.preventDefault()
+    if(event != null) event.preventDefault()
     ocultarSecciones();
     inicio.classList.remove("ocultar");
 }
