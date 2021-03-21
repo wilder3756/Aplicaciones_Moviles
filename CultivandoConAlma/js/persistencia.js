@@ -1,7 +1,7 @@
-var userL_txt, passwL_txt,
+let userL_txt, passwL_txt,
     nameR_txt, emailR_txt, userR_txt, passwR_txt,
     nameE_txt, emailE_txt, userE_txt, passwE_txt, confirpasswE_txt;
-var usuarios = [], current={};
+let usuarios = [], current={};
 
 function initPersistencia(){
     //Analizar el local storage
@@ -10,6 +10,8 @@ function initPersistencia(){
     initRegistro();
     initLogin();
     initEditar();
+    //Inicializar variables de notificaciones y productos
+    initAlerts();
 }
 
 /* Parte para registrar */
@@ -67,8 +69,9 @@ function adecuarCampos(usuario){
     emailE_txt.value=usuario.email;
     userE_txt.value=usuario.user;
     passwE_txt.value=usuario.passw;
-    
-    //cargarAlerts();
+
+    //Al ser una simulacion todos los usuarios tendran las mismas notificaciones
+    cargarAlerts();
 }
 
 /* Parte para login */

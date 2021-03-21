@@ -1,7 +1,7 @@
 let splash, iniciarsesion, recuperar, registro, inicio, ajuste, editperfil, notificacion, detallenoti, analisis, detallestat, productos, 
     pago, secciones;
 
-let botonIngresar, botonRegistrar, botonContraseña, botonRecuperar, botonRegistrarse, botonEditar, botonCerrar, botonGuardar, botonDetalleNoti, 
+let botonIngresar, botonRegistrar, botonContraseña, botonRecuperar, botonRegistrarse, botonEditar, botonCerrar, botonGuardar, 
     botonAtrasNoti, botonSiguienteNoti, botonDetalleStat, botonAñadir, botonCarro, botonPagar;
 
 let botonsLogin, botonsAnalisis, botonsNoti, botonsInicio, botonsCompras, botonsAjuste;
@@ -37,7 +37,6 @@ function crearReferencias(){
     botonEditar = document.getElementById("botonEditar");
     botonCerrar = document.getElementById("botonCerrar");
     botonGuardar = document.getElementById("botonGuardar");
-    botonDetalleNoti = document.getElementById("botonDetalleNoti");
     botonAtrasNoti = document.getElementById("botonAtrasNoti");
     botonSiguienteNoti = document.getElementById("botonSiguienteNoti");
     botonDetalleStat = document.getElementById("botonDetalleStat");
@@ -62,7 +61,6 @@ function crearEventos(){
     botonEditar.addEventListener("click",irEditarPerfil);
     botonCerrar.addEventListener("click",irIniciarSesion);
     //botonGuardar.addEventListener("click",irAjuste);
-    botonDetalleNoti.addEventListener("click",irDetalleNoti);
     /*botonAtrasNoti.addEventListener("click",irInicio);
     botonSiguienteNoti.addEventListener("click",irInicio);*/
     botonDetalleStat.addEventListener("click",irDetalleStat);
@@ -125,8 +123,9 @@ function irAjuste(event){
     ajuste.classList.remove("ocultar");
 }
 
-function irDetalleNoti(event){
-    event.preventDefault()
+function irDetalleAlert(){
+    var id = parseInt(this.name)-1;
+    cargarDetalleAlert(id);
     ocultarSecciones();
     detallenoti.classList.remove("ocultar");
 }
