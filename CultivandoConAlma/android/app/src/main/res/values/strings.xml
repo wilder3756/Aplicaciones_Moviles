@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CultivandoConAlma</string>
+    <string name="title_activity_main">CultivandoConAlma</string>
+    <string name="package_name">com.cultivandoconalma</string>
+    <string name="custom_url_scheme">com.cultivandoconalma</string>
+</resources>
