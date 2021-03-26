@@ -14,6 +14,11 @@ window.onload = ()=>{
 }
 
 function crearReferencias(){
+    var S=document.createElement('style');
+    S.type = 'text/css';
+    S.appendChild(document.createTextNode('section{height:'+window.innerHeight+'px;'));
+    document.body.appendChild(S);
+    
     splash = document.getElementById("splash");
     iniciarsesion = document.getElementById("iniciarsesion"); 
     recuperar = document.getElementById("recuperar");
